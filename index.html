@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Precios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">CALCULADORA DE PRECIOS</h1>
+        <div id="price-estimator">
+            <label for="piercings">Quiero:</label>
+            <select id="piercings" onchange="calcularPrecio()">
+                <option value="1">1 perforación</option>
+                <option value="2">2 perforaciones</option>
+                <option value="3">3 perforaciones</option>
+                <option value="4">4 perforaciones</option>
+            </select>
+            <br>
+            <label for="jewelry">Con:</label>
+            <select id="jewelry" onchange="calcularPrecio()">
+                <option value="acero">Acero quirúrgico</option>
+                <option value="acero316L">Acero quirúrgico 316L</option>
+                <option value="titanio">Titanio</option>
+                <option value="cartilago-basico">Cartílago (Titanio básico)</option>
+                <option value="cartilago-lujo">Cartílago (Titanio lujo)</option>
+            </select>
+            <p id="cost">El precio total aproximado de su perforación es de: ₡0</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
